@@ -62,7 +62,7 @@ const inputs = {
     class: "inputText_currentPassword",
     label: "Current password",
     type: "text",
-    name: "currentPassword",
+    name: "oldPassword",
     placeholder: "Current password",
   },
   newPassword: {
