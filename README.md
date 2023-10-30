@@ -10,6 +10,13 @@ Also Sweater contains 'sweat' to refer to hot debate.
 
 _Sweater is a messenger that will make you sweat._
 
+## Commands
+
+- `npm run dev` - start **vite** dev server
+- `npm run build` - to build source to **dist** directory
+- `npm run server` - to start local **express** server that serve **dist** directory
+- `npm run start` - rebuld the source and start **express** server
+
 ## Pages
 
 - Index with links to all pages [link](https://heap--tangerine-panda-5ff950.netlify.app/)
