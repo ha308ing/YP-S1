@@ -1,0 +1,30 @@
+{{#> threadsLayout }}
+  <div class="rightPanel_content threadList__active">
+    <div class="threadManage">
+      {{#> topBar backButton=true }}
+        {{> avatarThread }}
+        <h1>&lt;Thread title&gt;</h1>
+      {{/ topBar }}
+
+      <div class="members_container">
+        <div class="heading">Thread members</div>
+
+        <div class="searchContainer">
+          {{> inputText class="findUser" type="text" placeholder="Find user" }}
+        </div>
+
+        <div class="threadMembersContainer">
+          <div class="threadMembersList">
+            {{#each threadMembers }}
+              {{> threadMember iconClose=../iconClose iconInvite=../iconInvite removeMemberHander=../removeMemberHander }}
+            {{/each}}
+            </div>
+        </div>
+      </div>
+
+      {{> button buttonClass="button__leaveThread" buttonText="Leave thread" }}
+
+      {{> modalConfirm }}
+    </div>
+</div>
+{{/ threadsLayout }}
