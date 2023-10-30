@@ -3,19 +3,19 @@
 
   <div class="profile">
     {{#> topBar backButton=true exitButton=true passwordChangeButton=true editButton=true}}
-
-    <div class="topBar_heading">{{topBarHeading}}</div>
-
+      <h2 class="topBar_heading">{{topBarHeading}}</h2>
     {{/topBar}}
 
     <div class="avatarContainer">
       {{>avatarProfile}}
     </div>
 
-    <div class="heading_login">&lt;Login&gt;</div>
+    <h3 class="heading_login">&lt;Login&gt;</h3>
 
     <div class="inputsContainer">
-      {{> @partial-block }}
+      <form>
+        {{> @partial-block }}
+      </form>
     </div>
 
     {{> button buttonClass=saveButtonClasses buttonText="Save" }}

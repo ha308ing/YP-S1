@@ -7,19 +7,18 @@
       {{/ topBar }}
 
       <div class="members_container">
-        <div class="heading">Thread members</div>
+        <h2 class="heading">Thread members</h2>
 
         <div class="searchContainer">
           {{> inputText class="findUser" type="text" placeholder="Find user" }}
         </div>
 
         <div class="threadMembersContainer">
-          <div class="threadMembersList">
+          <ul class="threadMembersList">
             {{#each threadMembers }}
-              {{> threadMember iconClose=../iconClose iconInvite=../iconInvite removeMemberHander=../removeMemberHander }}
+              <li>{{> threadMember iconClose=../iconClose iconInvite=../iconInvite removeMemberHander=../removeMemberHander }}</li>
             {{/each}}
-            </div>
-        </div>
+          </ul>
       </div>
 
       {{> button buttonClass="button__leaveThread" buttonText="Leave thread" }}

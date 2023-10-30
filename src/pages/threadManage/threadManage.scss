@@ -48,6 +48,11 @@
   .leftPanel_container {
     display: none;
   }
+
+  .threadMembersList {
+    list-style: none;
+    padding: 0;
+  }
 }
 @media screen and (min-width: leftPanelLayout.$desktopThreshold) {
   .threadManagePage {
